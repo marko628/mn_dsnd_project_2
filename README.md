@@ -17,12 +17,12 @@ Specifics of testing are contained in the .pdf mentioned above.
 ## Step 3 Question 2
 These settings performed best based on testing:
 
-# readStream
+### readStream
 .option("maxOffsetsPerTrigger", 2000)
 .option("maxRatePerPartition", 10)
 
-# writeStream
+### writeStream
 .trigger(processingTime = '40 seconds')
 
-# resulting processed records per second ~334
+### resulting processed records per second ~334
 
